@@ -7,6 +7,5 @@ export function getAllFacilities() {
 
 // book facility
 export function bookFacility(facilityId: number, userId: string, userPaymentMethodId: string) {
-    console.log(facilityId, userId, userPaymentMethodId)
     return httpRequest.post("/api/fitness/facilities/book", { facilityId, userId, userPaymentMethodId});
 }
